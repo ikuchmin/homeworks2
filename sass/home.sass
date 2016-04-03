@@ -1,0 +1,56 @@
+.home
+    position: relative
+    height: 800px
+    width: 100%
+    &__swiper-container
+        height: 800px
+        width: 100%
+        text-align: center
+    &-swiper-slide
+        position: absolute
+        height: 100%
+        width: 100%
+        z-index: 0
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        -webkit-filter: blur(3px)
+    &-swiper-slide-1
+        background-image: url("../images/home/slide1_step_0.webp")
+    &-swiper-slide-2
+        background-image: url("../images/home/slide2_step_0.webp")
+    &-swiper-slide-3
+        background-image: url("../images/home/slide3_step_0.webp")
+    &__home-content
+        z-index: 2
+        margin-top: 443px
+        margin-bottom: 100px
+    &__social-link
+        z-index: 2
+        font-size: 21px
+        padding: 0 5px
+        opacity: 0.3
+        color: #fff
+        &:hover
+            opacity: 1
+            color: #fff
+
+.home-content
+    &__title
+        margin: 0
+        color: #fff
+        font-size: 62px
+        font-weight: 300
+    &__text
+        font-weight: 300
+        font-size: 48px
+        color: #fff
+        margin: -12px 0 0 0
+    &__note
+        font-weight: 300
+        font-size: 18px
+        color: #fff
+        margin: 0 0 0 0
+        &--hyphen
+            font-size: 30px
+            padding: 0 28px
