@@ -7,7 +7,9 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var paths = {
     sass:['sass/**/*.sass'],
-    script:['js/common.js', 'libs/**/*.js']
+    script:['js/*'],
+    images:['images/**'],
+    html:['index.html']
 };
 
 gulp.task('sass', function () {
@@ -35,8 +37,8 @@ gulp.task('mincss', function(){
 
 gulp.task('minscripts', function(){
     return gulp.src(paths.script)
-        .pipe(minify())
-        .pipe(gulp.dest('dist/libs/scripts'))
+    //        .pipe(minify())
+        .pipe(gulp.dest('dist/js/'))
         .pipe(notify({
         onLast: true,
         message: 'Done! MinScripts...'
@@ -44,20 +46,31 @@ gulp.task('minscripts', function(){
 });
 
 gulp.task('copyimages', function() {
-    gulp.src('images/**')
+    gulp.src(paths.images)
         .pipe(gulp.dest('dist/images'))
+        .pipe(notify({
+        onLast: true,
+        message: 'Done! Copy images...'
+    }));
 })
 
 gulp.task('minhtml', function() {
-    gulp.src('index.html')
-        .pipe(htmlmin({
-        collapseWhitespace: true,
-        removeComments: true}))
+    gulp.src(paths.html)
+    //        .pipe(htmlmin({
+    //        collapseWhitespace: true,
+    //        removeComments: true}))
         .pipe(gulp.dest('dist'))
+        .pipe(notify({
+        onLast: true,
+        message: 'Done! Minimize html...'
+    }));
 })
 
 gulp.task('watcher',function(){
     gulp.watch(paths.sass, ['sass']);
+    gulp.watch(paths.script, ['minscripts']);
+    gulp.watch(paths.images, ['copyimages']);
+    gulp.watch(paths.html, ['minhtml']);
 });
 
 gulp.task('default', ['watcher'] );

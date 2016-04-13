@@ -1,4 +1,7 @@
-.navbar
+.header
+    display: flex
+    justify-content: center
+    flex-wrap: nowrap
     position: absolute
     width: 100%
     top: 0
@@ -8,8 +11,18 @@
     background-color: rgba(16,22,54,.2)
     border: 0
     border-radius: 0
+.navbar
+    display: inline-flex
+    flex-wrap: nowrap
+    width: 90%
+    justify-content: space-between
+    margin-right: auto
+    margin-left: auto
+    padding-left: 0
+    padding-right: 0
     &__header
-        display: inline-block
+        display: inline-flex
+        flex-wrap: nowrap
     &__logotype
         font-family: 'Pacifico', cursive
         color: #fff
@@ -20,6 +33,7 @@
             color: #fff
             text-decoration: none
     &__tagline
+        display: flex
         font-weight: 300
         opacity: 0.5
         display: inline-block
@@ -31,6 +45,8 @@
             padding-right: 30px
     
 .navigation
+    display: inline-flex
+    flex-wrap: nowrap
     margin: 0
     padding: 0
     list-style: none

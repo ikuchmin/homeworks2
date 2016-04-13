@@ -1,747 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Brandi</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!--	<link rel="shortcut icon" href="favicon.png" />-->
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" async/>
-<!--	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />-->
-<!--	<link rel="stylesheet" href="libs/fontello/css/fontello.css" />-->
-<!--	<link rel="stylesheet" href="libs/swiper/swiper.css" />-->
-	<link rel="stylesheet" href="css/styles.css" />
-<!--	<link rel="stylesheet" href="css/media.css" />-->
-<!--	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>-->
-<!--	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>-->
-</head>
-<body>
-	
-<header>
-	<div class="navbar">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar__header">
-				<a class="navbar__logotype" href="#">Brandi</a>
-				<div class="navbar__tagline"><span class="color-blue navbar__tagline--delimiter">|</span>I’am your tag line</div>
-			</div>
-			<ul class="navigation">
-				<li class="navigation__item"><a class="navigation__link navigation__link--active" href="#home">Home</a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#features">Features</a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#works">Works</a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#team">Team</a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#contacts">Contact</a></li>
-			</ul>
-		</div><!-- /.container -->
-	</div>
-</header>
-	
-<section id="home" class="home">
-	<!-- Swiper -->
-	<div id="home__swiper-container" class="swiper-container home__swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-                <div class="home-swiper-slide home-swiper-slide-1"></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="home__home-content">
-								<h2 class="home-content__title">Meet <span class="weight-bold">Brandi</span>!</h2>
-								<p class="home-content__text"><span class="color-green">/creative</span> one page template.</p>
-								<p class="home-content__note"><span class="color-green home-content__note--hyphen">&mdash;</span> We are a team of professionals <span class="color-green home-content__note--hyphen">&mdash;</span></p>
-							</div>
-							<div class="home__social">
-								<a href="#" class="home__social-link"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="home__social-link"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="home__social-link"><i class="fa fa-google-plus"></i></a>
-								<a href="#" class="home__social-link"><i class="fa fa-dribbble"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>				
-			</div>
-			<div class="swiper-slide">
-                <div class="home-swiper-slide home-swiper-slide-2"></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="home__home-content">
-								<h2 class="home-content__title">Meet <span class="weight-bold">Brandi</span>!</h2>
-								<p class="home-content__text"> one page template.</p>
-							</div>
-						</div>
-					</div>
-				</div>				
-			</div>
-			<div class="swiper-slide">
-                <div class="home-swiper-slide home-swiper-slide-3"></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="home__home-content">
-								<h2 class="home-content__title">Meet <span class="weight-bold">Brandi</span>!</h2>
-								<p class="home-content__text"><span class="color-green">/creative</span> one page template.</p>
-								<p class="home-content__note"><span class="color-green home-content__note--hyphen">&mdash;</span> We are a team of professionals <span class="color-green home-content__note--hyphen">&mdash;</span></p>
-							</div>
-						</div>
-					</div>
-				</div>				
-			</div>
-		</div>
-		<!-- Add Pagination -->
-		<div class="swiper-pagination swiper-pagination-white"></div>
-	</div>	
-</section>
-	<!--
-<section id="features" class="features section section__features--padding bg-grey">
-	<div class="container">		
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">	
-				<h1 class="section__title">Features</h1>
-				<hr class="section__delimiter section__delimiter--bg-grey" />
-			</div>
-		</div>
-	</div>
-	<div class="container features__container">		
-		<div class="row">			
-			<!-- Swiper -->
-			<div id="features__swiper-container" class="swiper-container features__swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="col-md-4">
-							<div class="features__item">
-								<div class="features__icon">
-									<i class="features__i icon-feather"></i>
-								</div>
-								<div class="features__descr">
-									<h2 class="features__title">Branding</h2>
-									<p class="features__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="features__item">
-								<div class="features__icon">
-									<i class="features__i icon-pencil"></i>
-								</div>
-								<div class="features__descr">
-									<h2 class="features__title">Development</h2>
-									<p class="features__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="features__item">
-								<div class="features__icon">
-									<i class="features__i icon-megaphone"></i>
-								</div>
-								<div class="features__descr">
-									<h2 class="features__title">Consulting</h2>
-									<p class="features__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-								</div>
-							</div>
-						</div>					
-					</div>
-					<div class="swiper-slide">
-						<div class="col-md-4">
-							<div class="features__item">
-								<div class="features__icon">
-									<i class="features__i icon-megaphone"></i>
-								</div>
-								<div class="features__descr">
-									<h2 class="features__title">Consulting</h2>
-									<p class="features__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-								</div>
-							</div>
-						</div>							
-						<div class="col-md-4">
-							<div class="features__item">
-								<div class="features__icon">
-									<i class="features__i icon-feather"></i>
-								</div>
-								<div class="features__descr">
-									<h2 class="features__title">Branding</h2>
-									<p class="features__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="features__item">
-								<div class="features__icon">
-									<i class="features__i icon-pencil"></i>
-								</div>
-								<div class="features__descr">
-									<h2 class="features__title">Development</h2>
-									<p class="features__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-								</div>
-							</div>
-						</div>					
-					</div>
-					<div class="swiper-slide">
-						<div class="col-md-4">
-							<div class="features__item">
-								<div class="features__icon">
-									<i class="features__i icon-pencil"></i>
-								</div>
-								<div class="features__descr">
-									<h2 class="features__title">Development</h2>
-									<p class="features__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-								</div>
-							</div>
-						</div>						
-						<div class="col-md-4">
-							<div class="features__item">
-								<div class="features__icon">
-									<i class="features__i icon-feather"></i>
-								</div>
-								<div class="features__descr">
-									<h2 class="features__title">Branding</h2>
-									<p class="features__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-								</div>
-							</div>
-						</div>						
-						<div class="col-md-4">
-							<div class="features__item">
-								<div class="features__icon">
-									<i class="features__i icon-megaphone"></i>
-								</div>
-								<div class="features__descr">
-									<h2 class="features__title">Consulting</h2>
-									<p class="features__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-								</div>
-							</div>
-						</div>												
-					</div>
-				</div>
-				<!-- Add Pagination -->
-				<div class="swiper-pagination-black swiper-pagination"></div>
-			</div>						
-		</div>
-	</div>
-</section>	
-	
-<section id="works" class="works section section__works--padding bg-light">
-	<div class="container">		
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">	
-				<h1 class="section__title">Works</h1>
-				<hr class="section__delimiter section__delimiter--bg-white" />
-				<p class="section__note">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-			</div>
-		</div>
-	</div>	
-	<div class="container-fluid">		
-		<div class="row">
-			<div class="col-md-12">					
-				<div class="filter">
-					<ul class="filter__list">
-						<li class="filter__item filter__item--active active filter" data-filter="all">All</li>
-						<li class="filter__item filter" data-filter=".branding">Branding</li>
-						<li class="filter__item filter" data-filter=".web">Web</li>
-						<li class="filter__item filter" data-filter=".logodesign">Logo Design</li>
-						<li class="filter__item filter" data-filter=".photography">Photography</li>
-					</ul>				
-				</div>
-			</div>
-			<div id="portfolio" class="portfolio">
-				<div class="col-md-3 portfolio__item mix photography">
-					<img class="portfolio__image" src="./images/portfolio/1.jpg" alt="alt" />
-					<div class="portfolio__overlay-content">
-						<a href="#" class="portfolio__more">										
-							<div class="portfolio__icon">
-								<i class="portfolio__i icon-eye"></i>
-							</div>
-							<h3 class="portfolio__title">Labore et dolore magnam</h3>
-							<p class="portfolio__category">Photography</p>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 portfolio__item mix branding">
-					<img class="portfolio__image" src="./images/portfolio/2.jpg" alt="alt" />
-					<div class="portfolio__overlay-content">
-						<a href="#" class="portfolio__more">										
-							<div class="portfolio__icon">
-								<i class="portfolio__i icon-eye"></i>
-							</div>
-							<h3 class="portfolio__title">Labore et dolore magnam</h3>
-							<p class="portfolio__category">Branding</p>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 portfolio__item mix web">
-					<img class="portfolio__image" src="./images/portfolio/3.jpg" alt="alt" />
-					<div class="portfolio__overlay-content">
-						<a href="#" class="portfolio__more">										
-							<div class="portfolio__icon">
-								<i class="portfolio__i icon-eye"></i>
-							</div>
-							<h3 class="portfolio__title">Labore et dolore magnam</h3>
-							<p class="portfolio__category">Web</p>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 portfolio__item mix branding">
-					<img class="portfolio__image" src="./images/portfolio/4.jpg" alt="alt" />
-					<div class="portfolio__overlay-content">
-						<a href="#" class="portfolio__more">										
-							<div class="portfolio__icon">
-								<i class="portfolio__i icon-eye"></i>
-							</div>
-							<h3 class="portfolio__title">Labore et dolore magnam</h3>
-							<p class="portfolio__category">Photography</p>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 portfolio__item mix web">
-					<img class="portfolio__image" src="./images/portfolio/5.jpg" alt="alt" />
-					<div class="portfolio__overlay-content">
-						<a href="#" class="portfolio__more">										
-							<div class="portfolio__icon">
-								<i class="portfolio__i icon-eye"></i>
-							</div>
-							<h3 class="portfolio__title">Labore et dolore magnam</h3>
-							<p class="portfolio__category">Web</p>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 portfolio__item mix branding">
-					<img class="portfolio__image" src="./images/portfolio/6.jpg" alt="alt" />
-					<div class="portfolio__overlay-content">
-						<a href="#" class="portfolio__more">										
-							<div class="portfolio__icon">
-								<i class="portfolio__i icon-eye"></i>
-							</div>
-							<h3 class="portfolio__title">Labore et dolore magnam</h3>
-							<p class="portfolio__category">Branding</p>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 portfolio__item mix logodesign">
-					<img class="portfolio__image" src="./images/portfolio/7.jpg" alt="alt" />
-					<div class="portfolio__overlay-content">
-						<a href="#" class="portfolio__more">										
-							<div class="portfolio__icon">
-								<i class="portfolio__i icon-eye"></i>
-							</div>
-							<h3 class="portfolio__title">Labore et dolore magnam</h3>
-							<p class="portfolio__category">Logo Design</p>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 portfolio__item mix branding">
-					<img class="portfolio__image" src="./images/portfolio/8.jpg" alt="alt" />
-					<div class="portfolio__overlay-content">
-						<a href="#" class="portfolio__more">										
-							<div class="portfolio__icon">
-								<i class="portfolio__i icon-eye"></i>
-							</div>
-							<h3 class="portfolio__title">Labore et dolore magnam</h3>
-							<p class="portfolio__category">Branding</p>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-	
-<section id="team" class="team section section__team--padding bg-light">
-	<div class="container">		
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">	
-				<h1 class="section__title">Meet Our Team</h1>
-				<hr class="section__delimiter section__delimiter--bg-white" />
-				<p class="section__note">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-			</div>
-		</div>
-	</div>	
-	<div class="container team__padding">		
-		<div class="row">
-    	<!-- Swiper -->
-			<div id="team__swiper-container" class="swiper-container team__swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="col-md-3">
-							<div class="team__item-content">
-								<img class="team__photo" src="images/team/1.jpg" alt="John Filmr Doe" />
-								<div class="team__overlay">
-									<div class="team__title">Nemo enim ipsam voluptatem quia voluptas</div>
-									<div class="team__description">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</div>
-									<div class="team__social-block">
-										<a href="#" class="team__social-link"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<h3 class="team__name">John Filmr Doe</h3>
-							<p class="team__position">Managing Director</p>
-						</div>
-						<div class="col-md-3">
-							<div class="team__item-content">
-								<img class="team__photo" src="images/team/2.jpg" alt="Lead Designer" />
-								<div class="team__overlay">
-									<div class="team__title">Nemo enim ipsam voluptatem quia voluptas</div>
-									<div class="team__description">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</div>
-									<div class="team__social-block">
-										<a href="#" class="team__social-link"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<h3 class="team__name">Chystine Hineu</h3>
-							<p class="team__position">Lead Designer</p>
-						</div>
-						<div class="col-md-3">
-							<div class="team__item-content">
-								<img class="team__photo" src="images/team/3.jpg" alt="Lead Developer" />
-								<div class="team__overlay">
-									<div class="team__title">Nemo enim ipsam voluptatem quia voluptas</div>
-									<div class="team__description">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</div>
-									<div class="team__social-block">
-										<a href="#" class="team__social-link"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<h3 class="team__name">Martin Matrone</h3>
-							<p class="team__position">Lead Developer</p>
-						</div>
-						<div class="col-md-3">
-							<div class="team__item-content">
-								<img class="team__photo" src="images/team/4.jpg" alt="Sr. UI Designer" />
-								<div class="team__overlay">
-									<div class="team__title">Nemo enim ipsam voluptatem quia voluptas</div>
-									<div class="team__description">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</div>
-									<div class="team__social-block">
-										<a href="#" class="team__social-link"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<h3 class="team__name">Steve Flaulkin</h3>
-							<p class="team__position">Sr. UI Designer</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="col-md-3">
-							<div class="team__item-content">
-								<img class="team__photo" src="images/team/1.jpg" alt="Managing Director" />
-								<div class="team__overlay">
-									<div class="team__title">Nemo enim ipsam voluptatem quia voluptas</div>
-									<div class="team__description">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</div>
-									<div class="team__social-block">
-										<a href="#" class="team__social-link"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<h3 class="team__name">John Filmr Doe</h3>
-							<p class="team__position">Managing Director</p>
-						</div>
-						<div class="col-md-3">
-							<div class="team__item-content">
-								<img class="team__photo" src="images/team/4.jpg" alt="Sr. UI Designer" />
-								<div class="team__overlay">
-									<div class="team__title">Nemo enim ipsam voluptatem quia voluptas</div>
-									<div class="team__description">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</div>
-									<div class="team__social-block">
-										<a href="#" class="team__social-link"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<h3 class="team__name">Steve Flaulkin</h3>
-							<p class="team__position">Sr. UI Designer</p>
-						</div>						
-						<div class="col-md-3">
-							<div class="team__item-content">
-								<img class="team__photo" src="images/team/2.jpg" alt="Lead Designer" />
-								<div class="team__overlay">
-									<div class="team__title">Nemo enim ipsam voluptatem quia voluptas</div>
-									<div class="team__description">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</div>
-									<div class="team__social-block">
-										<a href="#" class="team__social-link"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<h3 class="team__name">Chystine Hineu</h3>
-							<p class="team__position">Lead Designer</p>
-						</div>
-						<div class="col-md-3">
-							<div class="team__item-content">
-								<img class="team__photo" src="images/team/3.jpg" alt="Lead Developer" />
-								<div class="team__overlay">
-									<div class="team__title">Nemo enim ipsam voluptatem quia voluptas</div>
-									<div class="team__description">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</div>
-									<div class="team__social-block">
-										<a href="#" class="team__social-link"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<h3 class="team__name">Martin Matrone</h3>
-							<p class="team__position">Lead Developer</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="col-md-3">
-							<div class="team__item-content">
-								<img class="team__photo" src="images/team/1.jpg" alt="Managing Director" />
-								<div class="team__overlay">
-									<div class="team__title">Nemo enim ipsam voluptatem quia voluptas</div>
-									<div class="team__description">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</div>
-									<div class="team__social-block">
-										<a href="#" class="team__social-link"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<h3 class="team__name">John Filmr Doe</h3>
-							<p class="team__position">Managing Director</p>
-						</div>
-						<div class="col-md-3">
-							<div class="team__item-content">
-								<img class="team__photo" src="images/team/4.jpg" alt="Sr. UI Designer" />
-								<div class="team__overlay">
-									<div class="team__title">Nemo enim ipsam voluptatem quia voluptas</div>
-									<div class="team__description">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</div>
-									<div class="team__social-block">
-										<a href="#" class="team__social-link"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<h3 class="team__name">Steve Flaulkin</h3>
-							<p class="team__position">Sr. UI Designer</p>
-						</div>						
-						<div class="col-md-3">
-							<div class="team__item-content">
-								<img class="team__photo" src="images/team/2.jpg" alt="Lead Designer" />
-								<div class="team__overlay">
-									<div class="team__title">Nemo enim ipsam voluptatem quia voluptas</div>
-									<div class="team__description">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</div>
-									<div class="team__social-block">
-										<a href="#" class="team__social-link"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<h3 class="team__name">Chystine Hineu</h3>
-							<p class="team__position">Lead Designer</p>
-						</div>
-						<div class="col-md-3">
-							<div class="team__item-content">
-								<img class="team__photo" src="images/team/3.jpg" alt="Lead Developer" />
-								<div class="team__overlay">
-									<div class="team__title">Nemo enim ipsam voluptatem quia voluptas</div>
-									<div class="team__description">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</div>
-									<div class="team__social-block">
-										<a href="#" class="team__social-link"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="team__social-link"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<h3 class="team__name">Martin Matrone</h3>
-							<p class="team__position">Lead Developer</p>
-						</div>
-					</div>					
-				</div>
-				<!-- Add Pagination -->
-				<div class="swiper-pagination swiper-pagination-black"></div>
-			</div>			
-		</div>
-	</div>
-</section>	
-	
-<section id="facts" class="facts section section__facts--padding bg-dark">
-	<div class="container">		
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">	
-				<h1 class="section__title">Some Fun Facts</h1>
-				<hr class="section__delimiter section__delimiter--bg-dark" />
-			</div>
-		</div>
-	</div>	
-	<div class="container">		
-		<div class="row">
-			<div class="col-md-3">
-				<div class="facts__icon">
-					<svg 
-						class="facts__svg"						
-						version="1.1"
-						id="svg3336">
-						<path
-							class="facts__path"
-							id="path3346"
-							d="M 10.049606,35.825578 C -2.4006626,29.500499 -3.5355776,10.851475 8.0626734,3.1761155 13.684071,-0.54394955 21.279942,-1.0388145 27.386254,1.9172005 40.162123,8.1018915 41.470083,26.86444 29.669752,34.673533 c -5.561854,3.680661 -13.701994,4.15863 -19.620146,1.152045 z m 15.410326,-1.807091 c 10.937224,-4.967441 13.441261,-18.283813 5.021401,-26.7036685 -6.707461,-6.70746105 -16.492539,-6.70746105 -23.1999996,0 -8.419856,8.4198555 -5.915823,21.7362275 5.0214006,26.7036685 5.136862,2.333046 8.020336,2.333046 13.157198,0 z M 21.0775,22.617211 c -2.948973,-3.042568 -3.196167,-3.815975 -3.196167,-10 0,-3.8015945 0.4328,-6.7023925 1,-6.7023925 0.561063,0 1,2.77097 1,6.3129085 0,5.708969 0.287002,6.587874 3,9.187091 2.956531,2.832536 3.770315,4.5 2.196167,4.5 -0.442108,0 -2.242108,-1.483923 -4,-3.297607 z" />
-					</svg>				
-				</div>
-				<h2 class="facts__number">3200</h2>
-				<p class="facts__description">Hours of Work</p>
-			</div>
-			<div class="col-md-3">
-				<div class="facts__icon">					
-					<svg 
-					class="facts__svg"						
-					version="1.1"
-					id="svg3356">
-					<path
-					class="facts__path"
-					id="path3366"
-					d="m 0.85653275,37.263017 c -1.8542404,-1.85424 -0.5603099,-5.375618 2.55705365,-6.958915 5.588835,-2.838546 5.869982,-3.267998 4.223664,-6.451626 -1.498928,-2.898607 -1.98017,-10.465563 -0.852483,-13.40427 0.810447,-2.1119887 5.5778336,-4.5448017 8.9060816,-4.5448017 1.569732,0 3.802734,1.17615 5.54966,2.923077 2.333205,2.3332047 2.921834,3.7962427 2.916916,7.2499997 -0.0034,2.379808 -0.678388,5.615861 -1.5,7.19123 -0.821611,1.575369 -1.493839,3.173199 -1.493839,3.550734 0,0.377535 2.054091,1.684382 4.564646,2.904104 3.960024,1.923928 4.522968,2.579495 4.25,4.949266 l -0.314646,2.731589 -14.057054,0.27628 C 7.8751534,37.831637 1.2376532,37.644137 0.85653275,37.263017 Z M 27.163586,34.646122 c 0,-0.691505 -2.025,-2.480426 -4.5,-3.975381 -4.795959,-2.896865 -5.301222,-4.123931 -2.968197,-7.208467 2.014459,-2.663352 1.956629,-11.908618 -0.08509,-13.6030917 -2.239629,-1.858727 -7.094308,-1.584678 -9.433811,0.5325427 -2.4072036,2.17849 -2.6707196,7.823434 -0.5373836,11.511679 0.7953196,1.375 1.7637266,3.132591 2.1520156,3.905758 0.755697,1.504755 -1.191234,3.378369 -6.5828056,6.334912 -1.7458635,0.957369 -2.8935873,2.194869 -2.5504972,2.75 0.9702575,1.56991 24.5057658,1.331775 24.5057658,-0.247952 z m 4.535419,-3.685408 c -0.376049,-0.608461 0.195587,-1.05731 1.346547,-1.05731 3.3778,0 3.415368,-1.926662 0.0733,-3.75933 -1.745864,-0.957368 -4.074534,-2.437411 -5.174823,-3.288984 -1.997738,-1.546156 -1.997585,-1.5538 0.109514,-5.485191 C 33.345526,7.4962123 28.87574,0.80198532 18.663586,3.3069133 l -3,0.735867 2.360784,-2.069688 c 3.198249,-2.80388998 7.344484,-2.60929098 11.062491,0.519206 2.674243,2.250227 3.076725,3.237836 3.076725,7.5496597 0,2.728421 -0.708181,6.330238 -1.573736,8.004036 -0.865555,1.673799 -1.428055,3.171138 -1.25,3.327421 0.178055,0.156282 2.263883,1.262713 4.635173,2.458736 3.676981,1.854582 4.265607,2.571663 4,4.87292 -0.239848,2.078076 -0.921863,2.768973 -2.967001,3.005643 -1.46056,0.16902 -2.949617,-0.16848 -3.309017,-0.75 z" />	
-					</svg>										
-				</div>
-				<h2 class="facts__number">120</h2>
-				<p class="facts__description">Satisfied Clinets</p>
-			</div>
-			<div class="col-md-3">
-				<div class="facts__icon">
-					<svg
-						 class="facts__svg"
-						 version="1.1"
-						 id="svg3376">
-						<path
-							 class="facts__path"
-							 id="path3386"
-							 d="M 0,29.5 C 0,26.681375 3.5254655,22.588688 5.109918,23.567933 5.729331,23.950751 5.311974,24.793611 4.0734435,25.661112 1.6937091,27.327942 1.3056396,30 3.443296,30 4.2371088,30 5.540125,29.06695 6.338888,27.926556 7.206389,26.688026 8.049249,26.270669 8.432067,26.890082 9.411312,28.474535 5.318625,32 2.5,32 0.5,32 0,31.5 0,29.5 Z m 12,0.732135 C 12,26.667771 7.278893,21.274902 3.5453549,20.574486 1.5954097,20.208675 0,19.558206 0,19.129001 0,17.379425 4.8059949,14 7.294127,14 9.365408,14 10.387893,13.164315 11.882358,10.25 15.447293,3.298119 20.872632,0 28.743398,0 c 3.168075,0 3.256005,0.115532 3.23464,4.25 -0.03667,7.096504 -3.051402,12.246746 -8.905043,15.213011 C 18.789863,21.633438 18,22.471027 18,24.842532 18,26.485611 17.039427,28.553783 15.685549,29.825686 12.879011,32.462291 12,32.55923 12,30.232135 Z m 4,-5.695693 c 0,-3.009012 0.548812,-3.655255 5.456146,-6.424783 6.180227,-3.487904 7.305578,-5.094105 8.214338,-11.7242303 L 30.313761,1.694211 25.90688,2.374921 C 20.169736,3.26111 17.06798,5.5825185 14.015744,11.274456 11.886341,15.245455 11.040338,15.949538 8.093044,16.2036 4.4514639,16.517511 2.4140311,19 5.797978,19 c 1.923938,0 6.191963,4.719208 7.518576,8.313382 C 14.328025,30.053747 16,28.323519 16,24.536442 Z M 19.039869,12.548039 C 16.383413,9.347205 20.285103,4.4302672 23.75,6.6122981 c 2.221731,1.3991429 2.764729,4.0625659 1.210131,5.9357409 -1.54461,1.861141 -4.375652,1.861141 -5.920262,0 z m 4.513982,-1.635171 c 1.030521,-1.667419 -1.287209,-3.5795095 -2.666719,-2.2 C 19.733208,9.866792 20.455411,12 22,12 c 0.485081,0 1.184314,-0.48921 1.553851,-1.087132 z" />
-					</svg>
-				</div>
-				<h2 class="facts__number">360</h2>
-				<p class="facts__description">Projects delivered</p>
-			</div>
-			<div class="col-md-3">
-				<div class="facts__icon">					
-					<svg 
-						id="svg3396"
-						class="facts__svg"						
-						version="1.1">
-						<path
-						class="facts__path"
-						id="path3406"
-						d="m 10.25,36.744468 c 0.587651,-1.762953 18.912349,-1.762953 19.5,0 0.315118,0.945355 -2.061111,1.25 -9.75,1.25 -7.688889,0 -10.065118,-0.304645 -9.75,-1.25 z M 14,33.064019 c 0,-0.511747 1.0125,-1.074247 2.25,-1.25 1.858456,-0.263943 2.302525,-1.038966 2.551835,-4.453656 0.276463,-3.786596 0.0551,-4.220118 -2.633439,-5.157347 -1.6144,-0.562783 -4.225226,-2.639922 -5.801835,-4.615865 C 8.789953,15.611208 6.917045,13.994514 6.204546,13.994497 3.755979,13.994442 0,9.1906001 0,6.0589751 0,3.5645851 0.483424,2.9307091 2.75,2.4531171 4.2625,2.1344171 6.281394,1.4508431 7.236431,0.93406512 9.605932,-0.34809088 32,-0.29346688 32,0.99446812 32,1.5444681 33.088196,1.9944681 34.418213,1.9944681 38.586856,1.9944681 40,3.0457441 40,6.1469111 c 0,3.080593 -3.80655,7.8475569 -6.266487,7.8475569 -0.746568,0 -2.371144,1.371168 -3.610169,3.047039 -1.239026,1.675871 -3.819957,3.794377 -5.735404,4.707789 -3.22728,1.538983 -3.460828,1.95713 -3.185285,5.702961 0.244282,3.320859 0.698868,4.099236 2.547345,4.361762 4.639414,0.658902 2.022613,2.180449 -3.75,2.180449 -3.3,0 -6,-0.418702 -6,-0.930449 z M 25.872699,17.89844 C 28.744364,15.223077 30,11.885991 30,6.9293681 l 0,-3.9349 -10,0 -10,0 0,4.54966 c 0,4.9699969 2.00609,9.7720609 4.749978,11.3702289 3.035763,1.768168 8.688549,1.251859 11.122721,-1.015917 z M 7,7.9944681 c 0,-2.333333 -0.444444,-3 -2,-3 -2.255046,0 -2.732896,2.867104 -0.8,4.8 1.945214,1.9452139 2.8,1.3957089 2.8,-1.8 z m 28.8,1.8 c 1.932896,-1.932896 1.455046,-4.8 -0.8,-4.8 -1.1,0 -2,0.638196 -2,1.418213 0,0.780016 -0.273145,2.130016 -0.606989,2.999999 -0.725666,1.8910549 1.633368,2.1554089 3.406989,0.381788 z" />	
-					</svg>					
-				</div>
-				<h2 class="facts__number">42</h2>
-				<p class="facts__description">Awards Won</p>
-			</div>			
-		</div>
-	</div>
-</section>
-	
-<section id="contacts" class="contacts section section__contacts--padding bg-light">
-	<div class="container">		
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">	
-				<h1 class="section__title">Let’s Discuss</h1>
-				<hr class="section__delimiter section__delimiter--bg-white" />
-				<p class="section__note">Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-			</div>
-		</div>
-	</div>	
-	<div class="container contacts-content__padding">		
-		<div class="row">
-			<div class="col-md-3">
-				<h3 class="contacts__title">Cras at ultrices erat, sed vulputate!</h3>
-				<p class="contacts__note">2345 Setwant natrer, 1234, 
-Washington. United States.<br/>
-(401) 1234 567<br/>
-hello@brandi.com<br/>
-ww.brandi.com</p>
-			</div>
-			<div class="col-md-8 contacts__form-contact">
-				<h2 class="form-contact__title">Say hello!</h2>
-				<form method="post">
-					<div class="row">
-						<div class="col-md-6"><input class="form-contact__input" type="text" value="" placeholder="Name" /></div>
-						<div class="col-md-6"><input class="form-contact__input" type="email" value="" placeholder="Email" /></div>						
-					</div>
-					<div class="row">
-						<div class="col-md-12"><input class="form-contact__input" type="text" value="" placeholder="Message" /></div>					
-					</div>
-					<button class="form-contact__button" type="button"><i class="fa fa-envelope-o form-contact__button-icon"></i>Send message</button>
-				</form>
-			</div>
-			<div class="col-md-1">
-				<div class="contacts__social">
-					<a href="#" class="contacts__social-link"><i class="fa fa-twitter"></i></a>
-					<a href="#" class="contacts__social-link"><i class="fa fa-facebook"></i></a>
-					<a href="#" class="contacts__social-link"><i class="fa fa-google-plus"></i></a>
-					<a href="#" class="contacts__social-link"><i class="fa fa-dribbble"></i></a>
-				</div>
-			</div>			
-		</div>
-	</div>
-</section>
-	
-<footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<div class="about">
-					<div class="about__logotype">Brandi</div>
-					<div class="about__text">eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-	consequat.</div>				
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="subscribe">
-					<div class="subscribe__title">Subscribe</div>
-					<form class="subscribe__form" method="post">
-						<input class="subscribe__input" type="text" />
-						<button class="subscribe__button" type="button"><i class="fa fa-long-arrow-right"></i></button>
-					</form>
-					<div class="subscribe__note">eusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-				</div>				
-			</div>
-			<div class="col-md-3">
-				<div class="explore">
-					<div class="explore__title">Explore</div>
-					<ul class="explore__list">
-						<li class="explore__item"><a class="explore__link" href="#">Envato</a></li>
-						<li class="explore__item"><a class="explore__link" href="#">Themeforest</a></li>
-						<li class="explore__item"><a class="explore__link" href="#">Themecurve</a></li>
-						<li class="explore__item"><a class="explore__link" href="#">Microsoft</a></li>
-						<li class="explore__item"><a class="explore__link" href="#">Kreativeshowcase</a></li>
-						<li class="explore__item"><a class="explore__link" href="#">Google</a></li>
-						<li class="explore__item"><a class="explore__link" href="#">Freebiescurve</a></li>
-						<li class="explore__item"><a class="explore__link" href="#">Yahoo</a></li>
-					</ul>
-				</div>			
-			</div>
-			<div class="col-md-3">
-				<div class="copyright">
-					<div class="copyright__note">
-						Created with <i class="fa fa-heart-o copyright__icon--color-grey copyright__icon"></i> by <a class="footer__link" href="#">themecurve</a>,<br />
-exclusive for kreativeshowcase</div>
-					<div class="copyright__signature">
-						© 2014 Brandi. All Rights Reserved.
-					</div>
-				</div>
-			</div>			
-		</div>
-	</div>
-</footer>
-    -->
-<!--
-	<script src="libs/jquery/jquery-2.1.3.min.js"></script>		
-	<script src="libs/mixitup/jquery.mixitup.min.js"></script>
-	<script src="libs/swiper/swiper.jquery.min.js"></script>
-	<script src="js/common.js"></script>
+    <head>
+        <title>Brandi</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--	<link rel="shortcut icon" href="favicon.png" />-->
+        <!--        <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" async/>-->
+        <!--	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />-->
+        <!--	<link rel="stylesheet" href="libs/fontello/css/fontello.css" />-->
+        <!--        <link rel="stylesheet" href="libs/swiper/swiper.css" async/>-->
+        <link rel="stylesheet" href="css/styles.css"/>
+        <!--	<link rel="stylesheet" href="css/media.css" />-->
+        <!--	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>-->
+        <!--	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>-->
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="navbar">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar__header">
+                    <a class="navbar__logotype" href="#">Brandi</a>
+                    <div class="navbar__tagline"><span class="color-blue navbar__tagline--delimiter">|</span>I’am your tag line</div>
+                </div>
+                <ul class="navigation">
+                    <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#home">Home</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#features">Features</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#works">Works</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#team">Team</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="home" class="home">
+            <!-- Swiper -->
+            <div id="home__swiper-container" class="swiper-container home__swiper-container">
+                <!--                <div class="swiper-wrapper">-->
+                <div class="swiper-slide home__swiper-slide-container">
+                    <div class="home__swiper-slide-bg home__swiper-slide-1"></div>
+                    <!--                        <div class="container">-->
+                    <!--                            <div class="row">-->
+                    <!--                                <div class="col-md-12">-->
+                    <div class="home__home-content">
+                        <h2 class="home-content__title">Meet <span class="weight-bold">Brandi</span>!</h2>
+                        <p class="home-content__text"><span class="color-green">/creative</span> one page template.</p>
+                        <p class="home-content__note"><span class="color-green home-content__note--hyphen">&mdash;</span> We are a team of professionals <span class="color-green home-content__note--hyphen">&mdash;</span></p>
+                    </div>
+                    <div class="home__social">
+                        <a href="#" class="home__social-link"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="home__social-link"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="home__social-link"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="home__social-link"><i class="fa fa-dribbble"></i></a>
+                    </div>
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                    <!--                        </div>				-->
+                </div>
+                <!--                </div>-->
+                <!-- Add Pagination -->
+                <!--                <div class="swiper-pagination swiper-pagination-white"></div>-->
+            </div>	
+        </section>
+
+        <section id="features" class="features section section__features--padding bg-grey">
+            <div class="container">		
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">	
+                        <h1 class="section__title">Features</h1>
+                        <hr class="section__delimiter section__delimiter--bg-grey" />
+                    </div>
+                </div>
+            </div>
+            <div class="container features__container">		
+                <div class="row">			
+                    <!-- Swiper -->
+                    <div id="features__swiper-container" class="swiper-container features__swiper-container">
+                        <div class="swiper-wrapper features__swiper-wrapper"></div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination-black swiper-pagination"></div>
+                    </div>						
+                </div>
+            </div>
+        </section>
+        <script src='js/features_block.js'></script>
+        <!--
+<script src="libs/jquery/jquery-2.1.3.min.js"></script>		
+<script src="libs/mixitup/jquery.mixitup.min.js"></script>
+<script src="libs/swiper/swiper.jquery.min.js"></script>
+<script src="js/common.js"></script>
 -->
-	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
-	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
-</body>
+        <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+        <!-- Google Analytics counter --><!-- /Google Analytics counter -->
+    </body>
 </html>
