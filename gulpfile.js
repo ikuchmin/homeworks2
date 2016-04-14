@@ -5,6 +5,7 @@ var minify = require('gulp-minify');
 var htmlmin = require('gulp-htmlmin');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
+var inlineCss = require('gulp-inline-css');
 var paths = {
     sass:['sass/**/*.sass'],
     script:['js/*'],
@@ -23,7 +24,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('mincss', function(){
-    return gulp.src(paths.scss)
+    return gulp.src(paths.sass)
         .pipe(sass().on('error', sass.logError))
         .pipe(minifyCss())
         .pipe(gulp.dest('css/styles'))
@@ -56,9 +57,10 @@ gulp.task('copyimages', function() {
 
 gulp.task('minhtml', function() {
     gulp.src(paths.html)
-    //        .pipe(htmlmin({
-    //        collapseWhitespace: true,
-    //        removeComments: true}))
+        .pipe(inlineCss())
+//        .pipe(htmlmin({
+//            collapseWhitespace: true,
+//            removeComments: true}))
         .pipe(gulp.dest('dist'))
         .pipe(notify({
         onLast: true,
