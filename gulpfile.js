@@ -10,6 +10,7 @@ var paths = {
     sass:['sass/**/*.sass'],
     script:['js/*'],
     images:['images/**'],
+    images:['fonts/**'],
     html:['index.html']
 };
 
@@ -55,6 +56,15 @@ gulp.task('copyimages', function() {
     }));
 })
 
+gulp.task('copyfonts', function() {
+    gulp.src(paths.images)
+        .pipe(gulp.dest('dist/fonts'))
+        .pipe(notify({
+        onLast: true,
+        message: 'Done! Copy fonts...'
+    }));
+})
+
 gulp.task('minhtml', function() {
     gulp.src(paths.html)
         .pipe(inlineCss())
@@ -69,9 +79,10 @@ gulp.task('minhtml', function() {
 })
 
 gulp.task('watcher',function(){
-    gulp.watch(paths.sass, ['sass']);
+    gulp.watch(paths.sass, ['minhtml', 'sass']);
     gulp.watch(paths.script, ['minscripts']);
     gulp.watch(paths.images, ['copyimages']);
+    gulp.watch(paths.images, ['copyfonts']);
     gulp.watch(paths.html, ['minhtml']);
 });
 

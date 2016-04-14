@@ -26,8 +26,13 @@
     display: none*/
     
 .portfolio
+    &__row
     &__item
         padding: 0
+        z-index: -1
+        background: gray url("/images/home/transparent.png") center no-repeat
+        background-size: cover
+        transition: background 1s
     &__image
         width: 100%
         height: auto
