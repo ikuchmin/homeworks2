@@ -62,7 +62,6 @@ var buildImageQueue = function(fnElement) {
     var listenerAction = function() {
         setTimeout(() => {
             let next = this.poll();
-            console.log(next);
             if (next == undefined) {
                 this.lock = false;
             } else {
@@ -76,7 +75,6 @@ var buildImageQueue = function(fnElement) {
             if (element === undefined) {
                 element = fnElement();
                 element.addEventListener('transitionend', listenerAction.bind(imgQueue), true);
-                console.log(element);
             };
             element.style.backgroundImage = `url(${url})`;
         }
