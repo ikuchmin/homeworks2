@@ -36,7 +36,7 @@ elWorks.innerHTML =
         </div>
         <div id="portfolio" class="portfolio">` +
             portfolio.map((el, index) => `
-                ${(index % 4 == 0) && '<div class="portfolio_row">' || ''}
+                ${(index % 4 == 0) && '<div class="portfolio__row">' || ''}
                     <div class="portfolio__item portfolio__item--${index}"></div>
                 ${(index % 4 == 3) && '</div>' || ''}
             `).reduce((res, curr) => res = res + curr, ``) + `

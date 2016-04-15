@@ -10,7 +10,7 @@ var paths = {
     sass:['sass/**/*.sass'],
     script:['js/*'],
     images:['images/**'],
-    images:['fonts/**'],
+    fonts:['fonts/**'],
     html:['index.html']
 };
 
@@ -57,7 +57,7 @@ gulp.task('copyimages', function() {
 })
 
 gulp.task('copyfonts', function() {
-    gulp.src(paths.images)
+    gulp.src(paths.fonts)
         .pipe(gulp.dest('dist/fonts'))
         .pipe(notify({
         onLast: true,

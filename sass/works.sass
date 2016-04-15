@@ -26,11 +26,17 @@
     display: none*/
     
 .portfolio
+    display: flex
+    flex-direction: column
+    height: 500px
     &__row
+        display: inline-flex
     &__item
+        height: 220px
+        width: 220px
         padding: 0
         z-index: -1
-        background: gray url("/images/home/transparent.png") center no-repeat
+        background: white url("/images/home/transparent.png") center no-repeat
         background-size: cover
         transition: background 1s
     &__image

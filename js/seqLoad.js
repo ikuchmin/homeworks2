@@ -62,6 +62,7 @@ var buildImageQueue = function(fnElement) {
     var listenerAction = function() {
         setTimeout(() => {
             let next = this.poll();
+            console.log(next);
             if (next == undefined) {
                 this.lock = false;
             } else {
@@ -75,6 +76,7 @@ var buildImageQueue = function(fnElement) {
             if (element === undefined) {
                 element = fnElement();
                 element.addEventListener('transitionend', listenerAction.bind(imgQueue), true);
+                console.log(element);
             };
             element.style.backgroundImage = `url(${url})`;
         }
@@ -121,21 +123,21 @@ var stWorks = "";
 loadQueue.load("./css/works.css", "text", (e) => stWorks = e.target.response);
 
 var portfolio = [
-    ["./images/portfolio/f1_1.webm", "./images/portfolio/f1_2.webm"],
-    ["./images/portfolio/f2_1.webm", "./images/portfolio/f2_2.webm"],
-    ["./images/portfolio/f3_1.webm", "./images/portfolio/f3_2.webm"],
-    ["./images/portfolio/f4_1.webm", "./images/portfolio/f4_2.webm"],
-    ["./images/portfolio/f5_1.webm", "./images/portfolio/f5_2.webm"],
-    ["./images/portfolio/f6_1.webm", "./images/portfolio/f6_2.webm"],
-    ["./images/portfolio/f7_1.webm", "./images/portfolio/f7_2.webm"],
-    ["./images/portfolio/f8_1.webm", "./images/portfolio/f8_2.webm"],
+    ["./images/portfolio/f1_1.webp", "./images/portfolio/f1_2.webp"],
+    ["./images/portfolio/f2_1.webp", "./images/portfolio/f2_2.webp"],
+    ["./images/portfolio/f3_1.webp", "./images/portfolio/f3_2.webp"],
+    ["./images/portfolio/f4_1.webp", "./images/portfolio/f4_2.webp"],
+    ["./images/portfolio/f5_1.webp", "./images/portfolio/f5_2.webp"],
+    ["./images/portfolio/f6_1.webp", "./images/portfolio/f6_2.webp"],
+    ["./images/portfolio/f7_1.webp", "./images/portfolio/f7_2.webp"],
+    ["./images/portfolio/f8_1.webp", "./images/portfolio/f8_2.webp"],
 ]
 loadQueue.load("./js/works_block.js", "text", (e) => eval(e.target.response));
 
 var seqPortfolio = {};
 var count = 0;
 portfolio.forEach((el, index) => {
-    let imgQueue = buildImageQueue(() => document.querySelector(`.portfolio__item--${index}`));
+    var imgQueue = buildImageQueue(() => document.querySelector(`.portfolio__item--${index}`));
     el.forEach((url, inIndex) => {
         seqPortfolio[index + inIndex * 8] = () => loadQueue.load(url, "blob", (e) => imgQueue.offer(urlCreator.createObjectURL(e.target.response)));
         count++;
@@ -153,4 +155,3 @@ var titleUrls = ["./images/home/slide1_step_0.webp",
 
 
 seqLoadImage(titleUrls, document.querySelector('.home__swiper-slide-bg'))
-//titleImage.forEach((url) => loadQueue.load(url, "blob", (e) => image1.offer(urlCreator.createObjectURL(e.target.response))))
